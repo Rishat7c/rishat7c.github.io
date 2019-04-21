@@ -193,9 +193,9 @@ button:hover {
 * --------------------------------------- */
 
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up), new  568px */
 
-@media (max-width: 576px) {
+@media (max-width: 567px) {
     #rotate {
         position: fixed;
         background: #252525 url(../img/rotate.png) no-repeat center;
