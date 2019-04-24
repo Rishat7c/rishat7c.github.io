@@ -13,7 +13,7 @@ h3,
 button,
 label {
     font-family: 'Raleway', sans-serif;
-    color: #e84855;
+    color: lightskyblue;
 }
 
 p,
@@ -27,7 +27,7 @@ a,
 a:focus,
 a:hover,
 a:active {
-    color: #e84855;
+    color: lightskyblue;
 }
 
 b,
@@ -40,14 +40,14 @@ label {
     height: 38px;
     padding: 7px 10px 7px 10px;
     margin: 10px;
-    border-left: 2px solid #e84855;
+    border-left: 2px solid lightskyblue;
     border-radius: .25rem
 }
 
 button {
     background: transparent;
     padding: 10px 0 10px 0;
-    border: 2px solid #e84855;
+    border: 2px solid lightskyblue;
     transition: background-color 0.5s ease-out;
     -webkit-transition: background-color 0.5s ease-out;
     -moz-transition: background-color 0.5s ease-out;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-    background: #e84855;
+    background: lightskyblue;
     color: #fff;
 }
 
@@ -72,7 +72,7 @@ button:hover {
 }
 
 .i-red {
-    color: #e84855;
+    color: lightskyblue;
 }
 
 #rotate {
@@ -100,7 +100,7 @@ button:hover {
 }
 
 .social-media-buttons>a>i:hover {
-    color: #e84855;
+    color: lightskyblue;
 }
 
 
@@ -117,7 +117,7 @@ button:hover {
 
 .skills-item-head {
     margin: 5px 5px 5px 0;
-    border-left: 6px solid #e84855;
+    border-left: 6px solid lightskyblue;
     padding-left: 10px;
 }
 
@@ -148,12 +148,12 @@ button:hover {
 
 #pp-nav li .active span,
 .pp-slidesNav .active span {
-    background: #e84855 !important;
+    background: lightskyblue !important;
 }
 
 #pp-nav span,
 .pp-slidesNav span {
-    border-color: #e84855 !important;
+    border-color: lightskyblue !important;
 }
 
 
