@@ -3,16 +3,13 @@ $(document).ready(function () {
     $('#btnContact').hover(function () {
         $(this).text('xpan96@gmail.com');
     }, function () {
-        $(this).text('CONTACT ME');
+        $(this).text('Обратная связь');
     });
-
-    /* Data for Zing Chart - chartSkills in Skills Section */
-    ZC.LICENSE = ['7b185ca19b4be2cba68fdcd369c663a9'];
 
     /* Colors */
     var white = '#fff';
     var transparent = 'transparent';
-    var lightRed = '#e84855';
+    var lightBlue = 'lightskyblue';
 
     /* Chart Skills */
     var chartSkillsData = {
@@ -26,12 +23,12 @@ $(document).ready(function () {
             alphaArea: '.6',
         },
         scaleK: {
-            labels: ['HTML & CSS', 'PHP', 'Java', 'Laravel', 'JavaScript', 'MySQL', '1C-Bitrix', 'Swift'],
+            labels: ['HTML & CSS', 'PHP', 'Java', 'Laravel', 'JavaScript', 'SQL', '1C-Bitrix', 'Swift'],
             item: {
                 fontColor: white,
                 rules: [{
                     rule: '%i == 0 || %i == 1 || %i == 3 || %i == 5 || %i == 6',
-                    fontColor: lightRed
+                    fontColor: lightBlue
                 }]
             },
             guide: {
@@ -55,10 +52,10 @@ $(document).ready(function () {
         },
         series: [{
             values: [50, 70, 40, 60, 30, 70, 60, 60],
-            backgroundColor: lightRed,
-            lineColor: lightRed,
+            backgroundColor: lightBlue,
+            lineColor: lightBlue,
             legendItem: {
-                fontColor: lightRed
+                fontColor: lightBlue
             }
         }]
     }
