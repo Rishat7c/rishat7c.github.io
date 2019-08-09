@@ -211,6 +211,13 @@ button:hover {
     }
 }
 
+@media (max-height: 1200px) {
+    #skills-left {
+        height: 95vh;
+        overflow: auto;
+    }
+}
+
 @media (max-width: 800px) and (max-height: 500px) {
     #btnContact,
     #home .social-media-buttons,
