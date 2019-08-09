@@ -38,14 +38,15 @@
     <script type="text/javascript">
       $(document).ready(function() {
           $('#pagepiling').pagepiling({
-            anchors: ['home', 'skills', 'contact'],
-            sectionsColor: ['#252525', '#252525', '#252525', '#252525'],
-            navigation: {
-              position: 'left',
-              tooltips: ['Rishat', 'About', 'Contact']
-            },
-            loopTop: false,
-            loopBottom: false
+              anchors: ['home', 'skills', 'contact'],
+              sectionsColor: ['#252525', '#252525', '#252525', '#252525'],
+              navigation: {
+                position: 'left',
+                tooltips: ['Rishat', 'About', 'Contact']
+              },
+              loopTop: true,
+              loopBottom: true,
+              normalScrollElements: '#skills-left'
           });
       });
     </script>
