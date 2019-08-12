@@ -79,9 +79,20 @@ button:hover {
     display: none;
 }
 
+.section {
+    background-color: #252525;
+}
 
 /* Home Section
  * --------------------------------------- */
+
+#home,
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .img-cover {
     height: 250px;
