@@ -1,6 +1,6 @@
 # Personal site | Gaisin Rishat
 
-![alt text](assets/img/portfolio.png "Personal site | Gaisin Rishat")
+![alt text](assets/img/portfolio.png "Personal site | Gaisin Rishat | Rishat7c")
 
 ## Third Party Sources - Technologies
 
