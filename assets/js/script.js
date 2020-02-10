@@ -68,3 +68,15 @@ $(document).ready(function () {
     });
 
 });
+
+document.querySelector('.open-menu').onclick = e => {
+    e.currentTarget.classList.toggle('open-menu_active');
+    e.currentTarget.nextElementSibling.classList.toggle('side-menu_opened')
+}
+
+document.body.addEventListener('click', e => {
+    if (!e.target.closest('.open-menu') && !e.target.closest('.side-menu')) {
+        document.querySelector('.open-menu').classList.remove('open-menu_active');
+        document.querySelector('.open-menu').nextElementSibling.classList.remove('side-menu_opened')
+    }
+})
