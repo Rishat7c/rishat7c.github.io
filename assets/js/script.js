@@ -80,3 +80,27 @@ document.body.addEventListener('click', e => {
         document.querySelector('.open-menu').nextElementSibling.classList.remove('side-menu_opened')
     }
 })
+
+// steps active fade animation
+const setVaribles = (() => {
+    const steps = [...document.querySelectorAll('.steps__wrap')];
+    return () => {
+        steps.forEach(item => {
+            new IntersectionObserver((entry) => {
+                entry.forEach(({ isIntersecting, target }) => {
+                    if (isIntersecting) {
+                        showSteps(target)
+                    }
+                })
+            }, {
+                rootMargin: '0px',
+                threshold: 0.5,
+            }).observe(item)
+        })
+    }
+})()
+
+function showSteps(element) {
+    element.classList.add('steps__wrap_active')
+}
+setVaribles()
