@@ -23,6 +23,10 @@ i {
     color: #7a7a7a;
 }
 
+img {
+    max-width: 100%;
+}
+
 a,
 a:focus,
 a:hover,
@@ -75,7 +79,7 @@ button:hover {
     display: none;
 }
 
-.section {
+body {
     background-color: #252525;
 }
 
@@ -143,7 +147,9 @@ button:hover {
  * --------------------------------------- */
 
 #home,
-#contact {
+#contact,
+#skills,
+#projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +181,10 @@ button:hover {
 }
 
 .social-media-buttons>a>i:hover {
+    color: lightskyblue;
+}
+
+.side-menu__item.active {
     color: lightskyblue;
 }
 
@@ -340,4 +350,112 @@ button:hover {
     figcaption>p {
         font-size: 0.8rem;
     }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.steps {
+    max-width: 1200px;
+}
+
+.steps__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center
+}
+
+.steps__wrap_left .steps__item {
+    grid-column-start: 1;
+    border-right-color: lightskyblue;
+}
+
+.steps__wrap_left .steps__image {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.steps__wrap:last-of-type .steps__item {
+    border-color: transparent;
+}
+
+.steps__wrap_left .steps__item__head__number {
+    order: 1;
+    margin-right: -18px;
+}
+
+.steps__wrap_left .text {
+    padding-right: 37px;
+}
+
+.steps__wrap_left .steps__image {
+    padding-left: 37px;
+}
+
+.steps__wrap_left .steps__item__head__title {
+    padding-right: 18px;
+}
+
+.steps__wrap_right .steps__item__head__number {
+    order: 0;
+    margin-left: -18px;
+}
+
+.steps__wrap_right .steps__image {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.steps__wrap_right .steps__item {
+    grid-column-start: 2;
+    border-left-color: lightskyblue;
+    margin-left: -1px;
+}
+
+.steps__wrap_right .text {
+    padding-left: 37px;
+}
+
+.steps__wrap_right .steps__image {
+    padding-right: 37px;
+}
+
+.steps__wrap_right .steps__item__head__title {
+    padding-left: 18px;
+}
+
+.steps__item {
+    border: 1px solid transparent;
+}
+
+.steps__item__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps__item__head__number {
+    border-radius: 50%;
+    background-color: lightskyblue;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps__item__head__title {
+    flex: 1;
+    font-weight: bold;
+    color: lightskyblue;
+    /*text-transform: uppercase;*/
+}
+
+.text {
+    color: #fff;
 }
